@@ -16,7 +16,6 @@ theme:
     primary: indigo
   features:
     - navigation.tabs
-    - navigation.instant
     - search.suggest
     - content.code.copy
   icon:
