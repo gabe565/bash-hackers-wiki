@@ -8,6 +8,9 @@ repo_url: !ENV [REPO_URL, "https://github.com/gabe565/bash-hackers-wiki"]
 
 theme:
   name: material
+  custom_dir: overrides
+  static_templates:
+    - robots.txt
   palette:
     scheme: disabled
     primary: indigo
@@ -56,3 +59,6 @@ markdown_extensions:
 nav:
   - Introduction: README.md
   - ... | regex=^(?!need_love\.md|bash4\.md|wishes\.md)
+
+watch:
+  - overrides
