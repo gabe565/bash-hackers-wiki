@@ -1,6 +1,6 @@
 # wiki.bash-hackers.org
 
-| :bulb: See [start.md](start.md) to get straight to business |
+| :bulb: See [bash-hackers.gabe565.com](https://bash-hackers.gabe565.com) or [docs/README.md](docs/README.md) to get straight to business |
 | --- |
 
 The popular wiki.bash-hackers.org had its DNS expire in April 2023, with the owner seemingly being incommunicado.  It looked like this domain would be in the region of €1k to purchase - ouch.
