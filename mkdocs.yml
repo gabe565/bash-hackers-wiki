@@ -32,7 +32,6 @@ extra_css:
 plugins:
   - awesome-pages
   - search
-  - tags
   - git-revision-date-localized:
       type: timeago
       enable_creation_date: true
