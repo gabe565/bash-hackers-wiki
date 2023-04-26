@@ -1,5 +1,5 @@
 site_name: The Bash Hackers Wiki
-site_url: https://bash-hackers.gabe565.com
+site_url: !ENV [SITE_URL, "https://bash-hackers.gabe565.com/"]
 site_author: Jan Schampera
 site_description: This wiki is intended to hold documentation of any kind about GNU Bash.
 
