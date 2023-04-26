@@ -1,0 +1,58 @@
+site_name: The Bash Hackers Wiki
+site_url: https://bash-hackers.gabe565.com
+site_author: Jan Schampera
+site_description: This wiki is intended to hold documentation of any kind about GNU Bash.
+
+repo_name: !ENV [REPO_NAME, "gabe565/bash-hackers-wiki"]
+repo_url: !ENV [REPO_URL, "https://github.com/gabe565/bash-hackers-wiki"]
+
+theme:
+  name: material
+  palette:
+    scheme: disabled
+    primary: indigo
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - awesome-pages
+  - search
+  - tags
+  - git-revision-date-localized:
+      type: timeago
+      enable_creation_date: true
+      exclude:
+        - README.md
+  - minify:
+      minify_html: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+      css_files:
+        - stylesheets/extra.css
+  - social
+
+markdown_extensions:
+  - mdx_truly_sane_lists
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.gemoji 
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+nav:
+  - Introduction: README.md
+  - ... | regex=^(?!need_love\.md|bash4\.md|wishes\.md)
