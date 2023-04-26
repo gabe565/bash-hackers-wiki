@@ -49,4 +49,4 @@ Set your default text editor (e.g. SublimeText):
 
 ## See also
 
-- [declare](commands/builtin/declare.md)
+- [declare](../../commands/builtin/declare.md)

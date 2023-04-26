@@ -4,14 +4,14 @@
 
 A pattern is a **string description**. Bash uses them in various ways:
 
-- [Pathname expansion](syntax/expansion/globs.md) (Globbing - matching
+- [Pathname expansion](../syntax/expansion/globs.md) (Globbing - matching
   filenames)
 - Pattern matching in [conditional
-  expressions](syntax/ccmd/conditional_expression.md)
-- [Substring removal](syntax/pe.md#substring_removal) and [search and
-  replace](syntax/pe.md#search_and_replace) in [Parameter
-  Expansion](syntax/pe.md)
-- Pattern-based branching using the [case command](syntax/ccmd/case.md)
+  expressions](../syntax/ccmd/conditional_expression.md)
+- [Substring removal](../syntax/pe.md#substring_removal) and [search and
+  replace](../syntax/pe.md#search_and_replace) in [Parameter
+  Expansion](../syntax/pe.md)
+- Pattern-based branching using the [case command](../syntax/ccmd/case.md)
 
 The pattern description language is relatively easy. Any character
 that's not mentioned below matches itself. The `NUL` character may not
@@ -75,7 +75,7 @@ Some simple examples using normal pattern matching:
 
 ## Extended pattern language
 
-If you set the [shell option](internals/shell_options.md) `extglob`, Bash
+If you set the [shell option](../internals/shell_options.md) `extglob`, Bash
 understands some powerful patterns. A `<PATTERN-LIST>` is one or more
 patterns, separated by the pipe-symbol (`PATTERN|PATTERN`).
 
@@ -99,13 +99,13 @@ patterns, separated by the pipe-symbol (`PATTERN|PATTERN`).
 
 | option            | classification                      | description                                                                   |
 |-------------------|-------------------------------------|-------------------------------------------------------------------------------|
-| `dotglob`         | [globbing](syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
+| `dotglob`         | [globbing](../syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
 | `extglob`         | global                              | enable/disable extended pattern matching language, as described above         |
-| `failglob`        | [globbing](syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
-| `nocaseglob`      | [globbing](syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
+| `failglob`        | [globbing](../syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
+| `nocaseglob`      | [globbing](../syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
 | `nocasematch`     | pattern/string matching             | perform pattern matching without regarding the case of individual letters     |
-| `nullglob`        | [globbing](syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
-| `globasciiranges` | [globbing](syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
+| `nullglob`        | [globbing](../syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
+| `globasciiranges` | [globbing](../syntax/expansion/globs.md) | see [Pathname expansion customization](/syntax/expansion/globs.md#Customization) |
 
 ## Bugs and Portability considerations
 

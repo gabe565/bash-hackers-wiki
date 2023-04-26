@@ -125,7 +125,7 @@ Bash.
 A colon-separated list of enabled shell options.
 
 Each word in the list is a valid argument for the `-s` option to the
-[shopt builtin command](commands/builtin/shopt.md). The options appearing
+[shopt builtin command](../commands/builtin/shopt.md). The options appearing
 in `BASHOPTS` are those reported as on by `shopt`. If this variable is
 in the environment when Bash starts up, each shell option in the list
 will be enabled before reading any startup files.
@@ -525,7 +525,7 @@ element of `FUNCNAME` has corresponding elements in `BASH_LINENO` and
 `BASH_SOURCE` to describe the call stack. For instance,
 `${FUNCNAME[$i]}` was called from the file `${BASH_SOURCE[$i+1]}` at
 line number `${BASH_LINENO[$i]}`. The [caller builtin
-command](commands/builtin/caller.md) displays the current call stack using
+command](../commands/builtin/caller.md) displays the current call stack using
 this information.
 
 This variable exists only when a shell function is executing.
@@ -626,7 +626,7 @@ Example content:
 | Set by Bash: | yes                   | Default:   | n/a     |
 
 An array variable created to hold the text read by the [mapfile builtin
-command](commands/builtin/mapfile.md) when no variable name is supplied.
+command](../commands/builtin/mapfile.md) when no variable name is supplied.
 
 ### OLDPWD
 
@@ -739,10 +739,10 @@ with `bind -x`.
 | Variable:    | `REPLY`                                                    | Since:     | unknown |
 |:-------------|:-----------------------------------------------------------|:-----------|:--------|
 | Type:        | normal variable                                            | Read-only: | no      |
-| Set by Bash: | only by the [read builtin command](commands/builtin/read.md) | Default:   | n/a     |
+| Set by Bash: | only by the [read builtin command](../commands/builtin/read.md) | Default:   | n/a     |
 
 Set to the line of input read by the [read builtin
-command](commands/builtin/read.md) when no arguments are supplied that
+command](../commands/builtin/read.md) when no arguments are supplied that
 name target variables.
 
 ### SECONDS
@@ -769,7 +769,7 @@ is subsequently reset.
 
 A colon-separated list of enabled shell options. Each word in the list
 is a valid argument for the `-o` option to the [set builtin
-command](commands/builtin/set.md). The options appearing in `SHELLOPTS`
+command](../commands/builtin/set.md). The options appearing in `SHELLOPTS`
 are those reported as on by `set -o`.
 
 If this variable is in the environment when Bash starts up, each shell
@@ -807,9 +807,9 @@ If this parameter is set when Bash is executing a shell script, its
 value is interpreted as a filename containing commands to initialize the
 shell, as in `~/.bashrc`. The value of `BASH_ENV` is subjected to
 
-- [parameter expansion](syntax/pe.md)
-- [command substitution](syntax/expansion/cmdsubst.md)
-- [arithmetic expansion](syntax/expansion/arith.md)
+- [parameter expansion](../syntax/pe.md)
+- [command substitution](../syntax/expansion/cmdsubst.md)
+- [arithmetic expansion](../syntax/expansion/arith.md)
 
 before being interpreted as a file name.
 
@@ -1060,7 +1060,7 @@ The home directory of the current user.
 The default argument for the [cd builtin command](/commands/builtin/cd).
 
 The value of this variable is also used when performing [tilde
-expansion](syntax/expansion/tilde.md).
+expansion](../syntax/expansion/tilde.md).
 
 ### HOSTFILE
 
@@ -1438,7 +1438,7 @@ A trailing newline is added when the format string is displayed.
 | Set by Bash: | no              | Default:   | n/a   |
 
 If set to a value greater than zero, `TMOUT` is treated as the default
-timeout for the [read builtin command](commands/builtin/read.md).
+timeout for the [read builtin command](../commands/builtin/read.md).
 
 The [select command](/commands/builtin/select) terminates if input does
 not arrive after `TMOUT` seconds when input is coming from a terminal.
