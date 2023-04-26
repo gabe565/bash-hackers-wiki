@@ -1,8 +1,3 @@
-/* Custom header color */
-[data-md-color-primary=indigo] {
-    --md-primary-fg-color: #2a309a;
-}
-
 /* Widen grid */
 .md-grid {
     max-width: 70rem;
