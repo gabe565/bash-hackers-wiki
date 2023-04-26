@@ -22,6 +22,11 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+extra:
+  analytics:
+    provider: !ENV [ANALYTICS_PROVIDER, "google"]
+    property: !ENV [ANALYTICS_TOKEN, ""]
+
 extra_css:
   - stylesheets/extra.css
 

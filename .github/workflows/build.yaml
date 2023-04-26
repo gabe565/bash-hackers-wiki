@@ -45,6 +45,7 @@ jobs:
         env:
           REPO_NAME: ${{ github.repository }}
           REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          ANALYTICS_TOKEN: ${{ vars.ANALYTICS_TOKEN }}
         run: mkdocs build
 
       - name: Upload artifact
