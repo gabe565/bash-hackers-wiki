@@ -77,17 +77,17 @@ match</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">See the <a
-href="/commands/classictest#file_tests">classic test operators</a></td>
+href="../../commands/classictest#file_tests">classic test operators</a></td>
 <td style="text-align: left;">Do <strong>not</strong> use the
 <code>test</code>-typical operators <code>-a</code> and <code>-o</code>
 for AND and OR.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">See also <a
-href="/syntax/arith_expr#comparisons">arithmetic comparisons</a></td>
+href="../../syntax/arith_expr#comparisons">arithmetic comparisons</a></td>
 <td style="text-align: left;">Using
 <code>(( &lt;EXPRESSION&gt; ))</code>, the <a
-href="/syntax/ccmd/arithmetic_eval">arithmetic expression compound
+href="../../syntax/ccmd/arithmetic_eval">arithmetic expression compound
 command</a></td>
 </tr>
 </tbody>

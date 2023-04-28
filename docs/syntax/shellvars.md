@@ -15,7 +15,7 @@
 <td><code>*</code></td>
 <td>asterisk</td>
 <td>The positional parameters starting from the first. When used inside
-doublequotes (see <a href="/syntax/quoting.md">quoting</a>), like
+doublequotes (see <a href="../syntax/quoting.md">quoting</a>), like
 <code>"$*"</code>, it expands to all positional parameters <em>as one
 word</em>, delimited by the first character of the <code>IFS</code>
 variable (a space in this example): <code>"$1 $2 $3 $4"</code>.<br />
@@ -26,26 +26,26 @@ delimiter.<br />
 When used unquoted, it will just expand to the strings, one by one, not
 preserving the word boundaries (i.e. word splitting will split the text
 again, if it contains <code>IFS</code> characters.<br />
-See also the <a href="/scripting/posparams.md">scripting article about
+See also the <a href="../scripting/posparams.md">scripting article about
 handling positional parameters</a>.</td>
 </tr>
 <tr class="even">
 <td><code>@</code></td>
 <td>at-sign</td>
 <td>The positional parameters starting from the first. When used inside
-doublequotes (see <a href="/syntax/quoting.md">quoting</a>), like
+doublequotes (see <a href="../syntax/quoting.md">quoting</a>), like
 <code>"$@"</code>, it expands all positional parameters <em>as separate
 words</em>: <code>"$1" "$2" "$3" "$4"</code><br />
 Without doublequotes, the behaviour is like the one of <code>*</code>
 without doublequotes.<br />
-See also the <a href="/scripting/posparams.md">scripting article about
+See also the <a href="../scripting/posparams.md">scripting article about
 handling positional parameters</a>.</td>
 </tr>
 <tr class="odd">
 <td><code>#</code></td>
 <td>hash mark</td>
 <td>Number of positional parameters (decimal)<br />
-See also the <a href="/scripting/posparams.md">scripting article about
+See also the <a href="../scripting/posparams.md">scripting article about
 handling positional parameters</a>.</td>
 </tr>
 <tr class="even">
@@ -58,7 +58,7 @@ handling positional parameters</a>.</td>
 <td><code>-</code></td>
 <td>dash</td>
 <td>Current option flags set by the shell itself, on invocation, or
-using the <a href="/commands/builtin/set.md">set builtin command</a>. It's
+using the <a href="../commands/builtin/set.md">set builtin command</a>. It's
 just a set of characters, like <code>himB</code> for <code>h</code>,
 <code>i</code>, <code>m</code> and <code>B</code>.</td>
 </tr>
@@ -66,7 +66,7 @@ just a set of characters, like <code>himB</code> for <code>h</code>,
 <td><code>$</code></td>
 <td>dollar-sign</td>
 <td>The process ID (PID) of the shell. In an <a
-href="/syntax/ccmd/grouping_subshell.md">explicit subshell</a> it expands
+href="../syntax/ccmd/grouping_subshell.md">explicit subshell</a> it expands
 to the PID of the current "main shell", not the subshell. This is
 different from <code>$BASHPID</code>!</td>
 </tr>

@@ -72,7 +72,7 @@ or<br />
 <code>test EXPRESSION</code></td>
 <td style="text-align: center;">The Bashish test keyword is reserved by
 POSIX(r), but not defined. Use the old fashioned way with the
-<code>test</code> command. See <a href="/commands/classictest.md">the
+<code>test</code> command. See <a href="../commands/classictest.md">the
 classic test command</a></td>
 <td style="text-align: center;">POSIX(r) and others</td>
 </tr>
