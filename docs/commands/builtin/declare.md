@@ -155,6 +155,6 @@ for details. ksh93 namerefs are much more powerful than Bash's.
 
 ## See also
 
-- [arrays](../../syntax/arrays.md)
-- [readonly](../../commands/builtin/readonly.md)
-- [unset](../../commands/builtin/unset.md)
+- [arrays](/syntax/arrays.md)
+- [readonly](/commands/builtin/readonly.md)
+- [unset](/commands/builtin/unset.md)

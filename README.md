@@ -1,19 +1,35 @@
 # wiki.bash-hackers.org
 
-| :bulb: See [bash-hackers.gabe565.com](https://bash-hackers.gabe565.com) or [docs/README.md](docs/README.md) to get straight to business |
+Update 2023/07/15:
+
+Check out the following forked resources, which takes the next step and presents this information extraction as GH pages:
+
+* https://flokoe.github.io/bash-hackers-wiki/
+* https://github.com/flokoe/bash-hackers-wiki
+* https://bash-hackers.gabe565.com/
+
+| :bulb: See [start.md](start.md) to get straight to business |
 | --- |
 
-The popular wiki.bash-hackers.org had its DNS expire in April 2023, with the owner seemingly being incommunicado.  It looked like this domain would be in the region of €1k to purchase - ouch.
+Update:
 
-Fortunately, archive.org has snapshotted this website, and so we can extract wiki.bash-hackers.org from archive.org's Wayback Machine.
-
-Additionally, the web server behind wiki.bash-hackers.org is still running, for now, so we can use an entry in our `hosts` file (`/etc/hosts` on *nix, `c:\Windows\System32\Drivers\etc\hosts` on Windows) that reads:
+The web server behind wiki.bash-hackers.org is still running, for now, so we can use an entry in our `hosts` file (`/etc/hosts` on *nix, `c:\Windows\System32\Drivers\etc\hosts` on Windows) that reads:
 
 ```bash
 83.243.40.67 wiki.bash-hackers.org
 ```
 
-This repo is targeting pages that have been captured by the Wayback Machine that specifically have `?do=edit` on the end of their URL.  These pages give us the Dokuwiki Markup source, relatively unmolested - maybe with a bit of errant html to strip.  We then convert the original source to GitHub markdown.
+There is also a pastebin.bash-hackers.org at the same IP address.
+
+In addition, it looks like the owner is [trying to sort it out](https://www.reddit.com/r/bash/comments/12klulf/bashhackersorg_is_now_a_parking_domain/jj6xx1s/)!  Stay tuned!
+
+---
+
+The popular wiki.bash-hackers.org site had its DNS expire in April 2023, with the owner seemingly being incommunicado.  It looked like this domain would be in the region of €1k to purchase - ouch.
+
+Fortunately, archive.org has snapshotted this website, and so we can extract wiki.bash-hackers.org from archive.org's Wayback Machine.
+
+This repo is targeting pages that have been captured by the Wayback Machine that specifically have `?do=edit` on the end of their URL.  These pages give us the Dokuwiki Markup source, relatively unmolested - maybe with a bit of errant html to strip.  We then convert the original source to GitHub markdown.  From there, we can front-end the content however we like, or import it to another wiki instance, or anything really.
 
 See the incomplete script "archive_crawler" to see my working.  I would not recommend blindly running it - it's beta quality at best.  Just read it and this page to follow the logic... or just fork this repo... or whatever, I'm not your Dad.
 
